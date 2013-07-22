@@ -7,6 +7,8 @@ developments in the browser world.
 **Note:** This option doesn't expose variables like `alert` or `console`. See
 option `devel` for more information.
 
+**Default:** true
+
 --
 
 couch

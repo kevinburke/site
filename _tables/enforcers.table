@@ -4,12 +4,16 @@ This option prohibits the use of bitwise operators such as `^` (XOR), `|` (OR)
 and others. Bitwise operators are very rare in JavaScript programs and quite
 often `&` is simply a mistyped `&&`.
 
+**Default:** true
+
 --
 
 camelcase
 
 This option allows you to force all variable names to use either camelCase
 style or UPPER_CASE with underscores.
+
+**Default:** This option is disabled by default.
 
 --
 
@@ -29,6 +33,8 @@ is a part of the loop while in reality it is not):
       shuffle();
       sleep();
 
+**Default:** true
+
 --
 
 eqeqeq
@@ -40,6 +46,8 @@ safer. If you would like to learn more about type coercion in JavaScript,
 we recommend [Truth, Equality and JavaScript](http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/)
 by Angus Croll.
 
+**Default:** true
+
 --
 
 es3
@@ -48,6 +56,8 @@ This option tells JSHint that your code needs to adhere to ECMAScript 3
 specification. Use this option if you need your program to be executable
 in older browsers—such as Internet Explorer 6/7/8—and other legacy
 JavaScript environments.
+
+**Default:** This option is disabled by default.
 
 --
 
@@ -69,6 +79,8 @@ For more in-depth understanding of `for in` loops in JavaScript, read
 [Exploring JavaScript for-in loops](http://javascriptweblog.wordpress.com/2011/01/04/exploring-javascript-for-in-loops/)
 by Angus Croll.
 
+**Default:** true
+
 --
 
 immed
@@ -77,6 +89,8 @@ This option prohibits the use of immediate function invocations without wrapping
 them in parentheses. Wrapping parentheses assists readers of your code in
 understanding that the expression is the result of a function, and not the
 function itself.
+
+**Default:** This option is disabled by default.
 
 --
 
@@ -90,6 +104,8 @@ following code will trigger a warning on line 4:
     if (cond) {
       doSomething(); // We used only two spaces for indentation here
     }
+
+**Default:** This option is disabled by default.
 
 --
 
@@ -107,6 +123,8 @@ For more in-depth understanding of scoping and hoisting in JavaScript, read
 [JavaScript Scoping and Hoisting](http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting)
 by Ben Cherry.
 
+**Default:** This option is disabled by default.
+
 --
 
 newcap
@@ -122,6 +140,8 @@ to be used with or without new. And this is important because when the function
 that was intended to be used with `new` is used without it, `this` will point to
 the global object instead of a new object.
 
+**Default:** This option is disabled by default.
+
 --
 
 noarg
@@ -131,6 +151,8 @@ Both `.caller` and `.callee` make quite a few optimizations impossible so they
 were deprecated in future versions of JavaScript. In fact, ECMAScript 5 forbids
 the use of `arguments.callee` in strict mode.
 
+**Default:** true
+
 --
 
 noempty
@@ -139,6 +161,8 @@ This option warns when you have an empty block in your code. JSLint was
 originally warning for all empty blocks and we simply made it optional.
 There were no studies reporting that empty blocks in JavaScript break your code
 in any way.
+
+**Default:** true
 
 --
 
@@ -154,6 +178,8 @@ There is no advantage in this approach over simply calling `MyConstructor` since
 the object that the operator `new` creates isn't used anywhere so you should
 generally avoid constructors like this one.
 
+**Default:** This option is disabled by default.
+
 --
 
 plusplus
@@ -163,6 +189,8 @@ Some people think that `++` and `--` reduces the quality of their coding styles
 and there are programming languages—such as Python—that go completely without
 these operators.
 
+**Default:** This option is disabled by default.
+
 --
 
 quotmark
@@ -171,6 +199,8 @@ This option enforces the consistency of quotation marks used throughout your
 code. It accepts three values: `true` if you don't want to enforce one
 particular style but want some consistency, `"single"` if you want to allow only
 single quotes and `"double"` if you want to allow only double quotes.
+
+**Default:** This option is disabled by default.
 
 --
 
@@ -188,6 +218,8 @@ is very useful for spotting leaking and mistyped variables.
 
 If your variable is defined in another file, you can use `/*global ... */`
 directive to tell JSHint about it.
+
+**Default:** true
 
 --
 
@@ -216,6 +248,8 @@ This can be set to "vars" to only check for variables, not function parameters,
 or "strict" to check all variables and parameters.  The default (true) behavior
 is to allow unused parameters that are followed by a used parameter.
 
+**Default:** true
+
 --
 
 strict
@@ -232,6 +266,8 @@ the global scoped strict mode because it might break third-party widgets on your
 page. If you really want to use global strict mode, see the *globalstrict*
 option.
 
+**Default:** true
+
 --
 
 trailing
@@ -244,6 +280,8 @@ JavaScript:
     // there is a whitespace after \
     var str = "Hello \
     World";
+
+**Default:** This option is disabled by default.
 
 --
 
@@ -262,6 +300,8 @@ function:
     function logout(request, isManual, whereAmI, onSuccess) {
       // ...
     }
+
+**Default:** This option is disabled by default.
 
 --
 
@@ -284,6 +324,8 @@ This option lets you control how nested do you want your blocks to be:
         }
       }
     }
+
+**Default:** This option is disabled by default.
 
 --
 
@@ -310,6 +352,8 @@ This option lets you set the max number of statements allowed per function:
       return j; // JSHint: Too many statements per function. (5)
     }
 
+**Default:** This option is disabled by default.
+
 --
 
 maxcomplexity
@@ -319,10 +363,14 @@ Cyclomatic complexity measures the number of linearly independent paths through
 a program's source code. Read more about
 [cyclomatic complexity on Wikipedia](http://en.wikipedia.org/wiki/Cyclomatic_complexity).
 
+**Default:** This option is disabled by default.
+
 --
 
 maxlen
 
 This option lets you set the maximum length of a line.
+
+**Default:** This option is disabled by default.
 
 --
