@@ -11,6 +11,8 @@ Installation:
 
 ```bash
 $ sudo gem install jekyll
+# You need to have the main JSHint project installed adjacent to this one.
+$ pushd ../jshint && npm install && node make.js build && popd
 $ npm install               # install the node.js dependencies
 $ node ./make.js dev        # run local server on port 4000
 $ node ./make.js build      # prepare and generate production ready version
